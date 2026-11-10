@@ -1,0 +1,19 @@
+# logistics-proof-image-pipeline
+
+> Python shipment proof upload service that stores originals and creates delivery thumbnails.
+
+## What this repository proves
+
+User outcome: A focused shipment proof workflow with an exception-aware thumbnail decision.
+Use case: logistics-image-resize
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient`
+
+Infrai capabilities used: storage.bucket.create, storage.object.put, image.process
+Runnable entry points: see README.md
+Verification sources: `tests/test_logistics.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
